@@ -1,0 +1,54 @@
+[versions]
+agp = "8.7.2"
+composeBom = "2024.08.00"
+glide = "4.16.0"
+kotlin = "2.0.0"
+coreKtx = "1.13.1"
+kotlinxSerializationJson = "1.6.3"
+material = "1.12.0"
+daggerHilt = "2.51.1"
+drawReceipt = "0.1.3"
+lifecycleRuntimeKtx = "2.8.4"
+activityCompose = "1.9.1"
+berTlv = "1.0-11"
+navVersion = "2.8.5"
+converterGson = "2.9.0"
+navigationHilt = "1.2.0"
+fragmentVersion = "1.8.5"
+viewmodelVersion = "2.6.1"
+material3WindowSize = "1.3.1"
+
+[libraries]
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+draw-receipt = { group = "com.github.danielfelgar", name = "draw-receipt", version.ref = "drawReceipt" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+ber-tlv = { module = "com.payneteasy:ber-tlv", version.ref = "berTlv" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewmodelVersion"}
+androidx-fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentVersion" }
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navVersion"}
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navVersion"}
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navVersion"}
+navigation-hilt = { group = "androidx.hilt", name = "hilt-navigation-fragment", version.ref = "navigationHilt"}
+navigation-hilt-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "navigationHilt"}
+google-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt"}
+google-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerHilt"}
+androidx-material3-window-size = { group = "androidx.compose.material3", name = "material3-window-size-class-android", version.ref = "material3WindowSize" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-hilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin"}
+
+
+
