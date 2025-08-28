@@ -1,9 +1,8 @@
-package com.example.aminhafazenda.api.room
+package com.example.aminhafazenda.api.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.util.Date
 
 @Entity
 data class Action (

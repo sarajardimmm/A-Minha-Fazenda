@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         setContent {
             navController = rememberNavController() // Initialize NavController
             var startScreen = MainNavigation.Screen.ACTION_LIST.name

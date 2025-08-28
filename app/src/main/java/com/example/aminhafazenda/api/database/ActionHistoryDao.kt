@@ -1,14 +1,14 @@
-package com.example.aminhafazenda.api.room
+package com.example.aminhafazenda.api.database
 
 import androidx.room.Dao
-import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface  ActionHistoryDao {
     @Query("SELECT * FROM `action`")
-    fun getAll(): List<Action>
+    fun getAll(): Flow<List<Action>>
 
     @Query("SELECT * FROM `action` WHERE actionId IN (:actionIds)")
     fun loadAllByIds(actionIds: IntArray): List<Action>
@@ -19,6 +19,6 @@ interface  ActionHistoryDao {
     @Insert
     fun insertAll(vararg action: Action)
 
-    @Delete
-    fun delete(user: Action)
+    @Query("DELETE FROM `action` WHERE actionId = :id")
+    fun delete(id: Int)
 }

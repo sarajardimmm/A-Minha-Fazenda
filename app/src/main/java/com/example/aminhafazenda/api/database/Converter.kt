@@ -1,4 +1,4 @@
-package com.example.aminhafazenda.api.room
+package com.example.aminhafazenda.api.database
 
 import androidx.room.TypeConverter
 import java.util.Date

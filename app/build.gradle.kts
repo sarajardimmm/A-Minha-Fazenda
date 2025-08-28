@@ -90,4 +90,7 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.glide)
 
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler)
 }
